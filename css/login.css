@@ -1,5 +1,4 @@
 main {
-  font-family: "Raleway", sans-serif;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -8,27 +7,28 @@ main {
   background-color: aliceblue;
 }
 
+.login__bg {
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+}
+
 .login {
-  width: 40%;
+  position: relative;
+  min-width: 20em;
+  width: 60%;
   height: 80%;
+  min-height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  position: relative;
   overflow: hidden;
   border-radius: 0.3rem;
   border: 1px solid rgb(230, 230, 230);
-}
-
-.login__bg {
-  width: 100%;
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  position: absolute;
 }
 
 form,
@@ -100,7 +100,7 @@ form,
 
 form {
   padding: 0;
-  wdith: 100%;
+  wdith: 5em;
 }
 
 .redLine {
@@ -114,4 +114,16 @@ form {
 #message {
   bottom: 0;
   position: absolute;
+}
+
+@media screen and (max-width: 740px) {
+  .login {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .login {
+    font-size: 2rem;
+  }
 }

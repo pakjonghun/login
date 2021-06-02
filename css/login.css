@@ -1,0 +1,117 @@
+main {
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.login {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.login__bg {
+  width: 100%;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  position: absolute;
+}
+
+form,
+.login__button {
+  z-index: 2;
+}
+
+.login__title {
+  font-size: 2rem;
+  margin-bottom: 2em;
+}
+
+.login__column {
+  border: 1px solid rgb(194, 194, 194);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 1.6em;
+  margin: 0.6em 0;
+}
+
+.login__button {
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 0.7em 1em;
+  background-color: skyblue;
+  border-radius: 0.2em;
+  font-size: 1rem;
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.login__button:hover {
+  background-color: #8ec3d8;
+}
+
+.login__button:active {
+  border: 1px solid gray;
+}
+
+.column__input {
+  font-size: 1rem;
+  height: 100%;
+  border: 1px solid rgb(231, 231, 231);
+  padding: 0.3em;
+}
+
+.column__input:focus {
+  outline: none;
+  border: 1px solid rgb(194, 192, 192);
+}
+
+.column__title {
+  padding: 0 0.5em;
+  color: gray;
+  background-color: rgb(221, 221, 221);
+  height: 100%;
+  width: 100%;
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  padding: 0;
+  wdith: 100%;
+}
+
+.redLine {
+  border: 1px solid red;
+}
+
+.login__conatiner {
+  position: relative;
+}
+
+#message {
+  bottom: 0;
+  position: absolute;
+}
